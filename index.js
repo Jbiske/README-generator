@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const Choices = require('inquirer/lib/objects/choices');
-const validateEmail = require("validate_email")
+
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -63,7 +63,7 @@ const questions = () => {
             type: 'input',
             name: 'email',
             message: 'Enter your email: (only valid email is accepted)',
-            validate: validateEmail
+          
         },
     ])
 }
